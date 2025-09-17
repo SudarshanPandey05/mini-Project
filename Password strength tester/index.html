@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <header>
+        <h1>Password Strength Tester</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <button id="highContrastToggle">Enable High Contrast Mode</button>
+    </header>
+    <main>
+        <section>
+            <h2>Check how strong your password is!</h2>
+            <div class="password-container">
+                <input type="password" id="passwordInput" placeholder="Enter your password">
+                <button id="eyeButton" class="eye-button">👁️</button>
+            </div>
+            <button id="checkButton">Check Strength</button>
+            <div id="strengthIndicator" class="strength-indicator"></div>
+            <p id="feedback" class="feedback"></p>
+            <h3>Password Requirements:</h3>
+            <ul id="requirementsList">
+                <li id="lengthRequirement">At least 8 characters</li>
+                <li id="uppercaseRequirement">At least 1 uppercase letter</li>
+                <li id="numberRequirement">At least 1 number</li>
+                <li id="specialRequirement">At least 1 special character</li>
+            </ul>
+            <button id="generateButton">Generate Strong Password</button>
+            <input type="text" id="generatedPassword" readonly placeholder="Generated password will appear here">
+        </section>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Default light mode styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background: url('https://img.freepik.com/premium-vector/internet-digital-security-technology-concept-business-background-lock-circuit-board_118331-142.jpg?w=1380'); /* Set background image */
+    background-size: cover; /* Make the background image cover the entire page */
+}
+
+header, footer {
+    width: 100%;
+    background-color: rgb(6, 46, 249); /* Slightly transparent background for better readability */
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+main {
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(6, 46, 249);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(6, 46, 249);
+}
+
+.strength-indicator {
+    height: 20px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.feedback {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+#generatedPassword {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header, 
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode main {
+    background: #333333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode input[type="password"], 
+body.dark-mode input[type="text"] {
+    background: #555555;
+    border: 1px solid #666666;
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+body.dark-mode button:hover {
+    background-color: #333333;
+}
+body.high-contrast-mode { 
+    background: #000000;   /* Black background for maximum contrast */
+    color: #ffffff;        /* White text for high contrast */
+}
+
+body.high-contrast-mode header, 
+body.high-contrast-mode footer {
+    background-color: #000000;  /* Pure black */
+    color: #ffffff;             /* White text */
+    border-bottom: 2px solid #ffffff; /* White border for separation */
+}
+
+body.high-contrast-mode main {
+    background: #000000;  /* Black background for main content */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);  /* Bright light effect */
+}
+
+body.high-contrast-mode input[type="password"], 
+body.high-contrast-mode input[type="text"] {
+    background: #000000;    /* Black background for inputs */
+    color: #ffffff;         /* White text */
+    border: 2px solid #ffffff;  /* White border */
+}
+
+body.high-contrast-mode input[type="password"]:focus, 
+body.high-contrast-mode input[type="text"]:focus {
+    border-color: #ff0000; /* Bright red focus border */
+}
+
+body.high-contrast-mode button {
+    background-color: #000000;  /* Black background for buttons */
+    color: #ffffff;             /* White text */
+    border: 2px solid #ffffff;  /* White border */
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;  /* Make button text bold for better visibility */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+body.high-contrast-mode button:hover {
+    background-color: #ff0000; /* Bright red hover */
+    transform: scale(1.05);
+}
+
+body.high-contrast-mode button:active {
+    background-color: #cc0000; /* Darker red on active press */
+}
+
+body.high-contrast-mode a {
+    color: #00ff00;  /* Bright green for links */
+    text-decoration: none;
+    font-weight: bold; /* Make links more prominent */
+}
+
+body.high-contrast-mode a:hover {
+    color: #00cc00;  /* Slightly darker green on hover */
+    text-decoration: underline;
+}
