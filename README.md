@@ -1,2 +1,2 @@
-# mini-Project
+# web development projects
 my portfolio 
